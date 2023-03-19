@@ -14,7 +14,7 @@ export default function Homepage() {
             <p>Find out by answering 10-question quiz to see how your answers compare to AI’s.</p>
         </div>
 
-        <div className={styles.quizesContainer}>
+        <div className={styles['quiz-options_container']}>
             {QuizOption("General Questions", "/images/earth.jpg", "")}
             {QuizOption("Physics", "/images/physics.jpg", "")}
             {QuizOption("Math", "/images/math.png", "")}
