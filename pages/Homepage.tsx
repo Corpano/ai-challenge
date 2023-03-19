@@ -5,11 +5,11 @@ const roboto = Roboto({weight:"700", subsets:['latin']});
 
 export default function Homepage() {
     return <div className={styles.container + " " + roboto.className}>
-        <nav className={styles.navBar}>
+        <nav className={styles['nav-bar']}>
             <h2>AI CHALLENGE</h2>
         </nav>
 
-        <div className={styles.questionContainer}>
+        <div className={styles['headline-container']}>
             <h2>ARE YOU SMARTER THAN <span>CHAT GPT?</span></h2>
             <p>Find out by answering 10-question quiz to see how your answers compare to AI’s.</p>
         </div>
@@ -17,7 +17,7 @@ export default function Homepage() {
         <div className={styles.quizesContainer}>
             {QuizOption("General Questions", "/images/earth.jpg", "")}
             {QuizOption("Physics", "/images/physics.jpg", "")}
-            {QuizOption("Math", "/images/math.avif", "")}
+            {QuizOption("Math", "/images/math.png", "")}
         </div>
 
     </div>
